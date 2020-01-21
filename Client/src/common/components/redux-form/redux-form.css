@@ -1,0 +1,341 @@
+.redux-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.redux-form__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redux-form__header-inputs {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.header-inputs__slash {
+  display: flex;
+  align-items: center;
+  padding: 0 15px 0 0;
+}
+
+.header-inputs__status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  height: 33px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.redux-form__field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.redux-form__field-container_cdp {
+  width: 340px;
+  position: relative;
+}
+
+.header-inputs-container {
+  height: 40px;
+}
+
+div.header-inputs__border {
+  border-right: 1px solid #828282;
+}
+
+.standart-container {
+  height: 80px;
+  width: 250px;
+  margin: 10px;
+}
+
+.flexible-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 65px;
+}
+
+.aliaces-color {
+  color: #828282;
+}
+
+.redux-form__label {
+  display: flex;
+  align-items: center;
+  color: #828282;
+  font-size: 12px;
+  font-weight: bold;
+  height: 15px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  height: 65px;
+  width: 100%;
+}
+
+.full-width-field {
+  display: flex;
+  flex-direction: column;
+  min-height: 65px;
+  width: 100% !important;
+}
+
+.field__view-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.field__view-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+}
+
+.redux-form__row--nargin-top {
+  margin-top: 15px;
+}
+
+.field--editable {
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.field--invalid {
+  border-color: red;
+}
+
+.field--editable:hover {
+  background-color: #F2F2F2;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.field--editable .edit_pencil {
+  display: none;
+}
+
+.field--editable:hover .edit_pencil {
+  width: 19px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  float: right;
+  right: 0;
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+
+.field--editable>pre {
+  min-height: 30px;
+  width: 100%;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.field--editable>span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.field--not--editable {
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.field--not--editable>pre {
+  min-height: 65px;
+  width: 100%;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.field--not--editable>span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.field__error-container {
+  display: flex;
+  width: 100%;
+  height: 25px;
+  color: red;
+  font-size: 12px;
+}
+
+.field__search-dropdown-form {
+  width: 100%;
+}
+
+.field__multi-select-rel-cont {
+  display: flex;
+  width: 100%;
+  height: 35px;
+}
+
+.field__multi-select-cont {
+  display: flex;
+  width: 100%;
+}
+
+.field__multi-select-option-cont {
+  width: 300px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.height-100pc {
+  height: 100%;
+}
+
+pre {
+  margin: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.suggestbox__control-index {
+  z-index: 10;
+}
+
+.redux-form__required {
+  color: red;
+}
+
+.redax-form__multi-box-wrapper .multi-value-suggestbox__container .css-1pcexqc-container .multi-value-suggestbox__control--is-focused {
+  width: 100%;
+}
+
+.custom_validation-form_multisuggest {
+  color: red;
+}
+
+.redux-form__buttons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 100%;
+  min-height: 70px;
+  padding: 35px 0 0 0;
+}
+
+.field__search-dropdown-form>div>div:first-of-type {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.form-header {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.highlighted-text {
+  font-style: italic;
+  color: #828282;
+}
+
+.field__padding--left {
+  padding-left: 5px;
+}
+
+.employees-form__row{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.employees-form__standart-container {
+  height: 80px;
+  width: 200px;
+  margin: 8px;
+}
+
+.employees-form__standart-container div div .clear-svg {
+  top: 10px;
+}
+
+.field--not--editable {
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.suggest-box__array-title {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.suggest-box__array-title--reviewers {
+  height: 95px;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+.error {
+  color: red;
+}
+
+
+
+
+.btn-tertiary {
+  color: #555;
+  padding: 0;
+  line-height: 30px;
+  width: 240px;
+  margin-top: 10px;
+  display: block;
+  border: 1px solid #ccc;
+}
+.btn-tertiary:hover, .btn-tertiary:focus{
+  color:#888;
+  border-color:#888
+}
+.input_type-file {
+  width:.1px;
+  height:.1px;
+  opacity:0;
+  overflow:hidden;
+  position:absolute;
+  z-index:-1
+}
+.input_type-file + .js-labelFile{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  padding:0 10px;
+  cursor:pointer
+}
+.input_type-file + .js-labelFile .icon:before{
+  content:"\f093"
+}
+.input_type-file + .js-labelFile.has-file .icon:before{
+  content:"\f00c";color:#5AAC7B
+}
+.js-fileName {
+  padding-left: 5px;
+}

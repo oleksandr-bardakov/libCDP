@@ -1,0 +1,128 @@
+.page-wrapper {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+.version-wrapper {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center
+}
+.version-container {
+    width: 60px;
+    margin: auto;
+}
+.light-part {
+    color: #FFFFFF;
+}
+.dark-part {
+    margin-left: 10px;
+}
+
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.logo-wrapper {
+    background: #4B4B4B;
+    display: flex;
+}
+.content-wrapper form {
+    width: 70%;
+    height: 70%;
+    max-width: 400px;
+}
+.content-wrapper > form > h1 {
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.content-wrapper > form > h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 25px;
+    font-size: 14px;
+    color: #4B4B4B;
+    margin: 0px;
+}
+.content-wrapper > form > h3 {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 25px;
+    font-size: 13px;
+    color: rgb(57, 85, 242);
+}
+.content-wrapper form input {
+    border: 1px solid #DFDFDF;
+    margin: 9px 0 9px 0;
+    height: 48px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #4B4B4B;
+    padding-left: 20px;
+}
+
+.content-wrapper form input:hover {
+    margin: 9px 0 9px 0 !important;
+}
+
+.login-page-input div::before {
+    border: none;
+}
+.login-page-input div::after {
+    border: none;
+}
+.login-page-input div:hover::before {
+    border: none !important;
+}
+
+.clear_login-input{
+  position: absolute;
+  top: 40%;
+  right: 8%;
+  transform: scale(0.6);
+  cursor: pointer;
+}
+
+.sign-error-container {
+    font-family: Roboto;
+    font-style: italic;
+    line-height: normal;
+    color: rgb(57, 85, 242);
+    min-height: 17px;
+    margin-bottom: 10px;
+}
+
+.login-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 130px;
+}
+
+.login-size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(57, 85, 242);
+    color: white;
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+}

@@ -1,0 +1,1 @@
+move pre-commit ..\.git\hooks

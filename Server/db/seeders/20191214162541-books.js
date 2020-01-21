@@ -1,0 +1,120 @@
+'use strict';
+
+module.exports = {
+  up: (queryInterface, Sequelize) => {
+    return queryInterface.bulkInsert('books', [
+      {
+        name: 'Harry Potter and the Philosophers Stone',
+        description: 'Until letters were delivered to House No. 4 on Tisova Street, Harry Potter knew nothing about Hogwarts.',
+        year: 1995,
+        autor: 'J. K. Rowling',
+        cost: 290.00,
+        amount: 7,
+        deleted: 0,
+      },
+      {
+        name: 'The Martian',
+        description: 'I am stuck on Mars. I have no means of communication with the Earth. My habitat expires after 31 days.',
+        year: 2015,
+        autor: 'Andy Weir',
+        cost: 320.00,
+        amount: 3,
+        deleted: 0,
+      },
+      {
+        name: 'Memento',
+        description: 'Screenplay by Christopher Nolan, based on the short story "Memento Mori" by Jonathan Nolan.',
+        year: 2000,
+        autor: 'Christopher Nolan',
+        cost: 220.00,
+        amount: 11,
+        deleted: 0,
+      },
+      {
+        name: 'Hannah and Her Sisters',
+        description: 'Written by Woody Allen',
+        year: 2015,
+        autor: 'Woody Allen',
+        cost: 180.50,
+        amount: 2,
+        deleted: 0,
+      },
+      {
+        name: 'Patton',
+        description: 'Screen Story and Screenplay by Francis Ford Coppola and Edmund H. North, based on "A Soldiers Story" by Omar H.',
+        year: 1970,
+        autor: 'Franklin J.',
+        cost: 265.40,
+        amount: 3,
+        deleted: 0,
+      },
+      {
+        name: 'Harold and Maude',
+        description: 'Written by Colin Higgins. -"I havent lived… But Ive died a few times."',
+        year: 1971,
+        autor: 'Hal Ashby',
+        cost: 305.00,
+        amount: 5,
+        deleted: 0,
+      },
+      {
+        name: 'Aibolit',
+        description: 'Stories for doctor Aibolit',
+        year: 1955,
+        autor: 'K. Chykovskiy',
+        cost: 125.00,
+        amount: 15,
+        deleted: 0,
+      },
+      {
+        name: 'Charlottes Web',
+        description: 'E.B. White - Charlottes Web',
+        year: 2006,
+        autor: 'E.B. White',
+        cost: 177.00,
+        amount: 9,
+        deleted: 0,
+      },
+      {
+        name: 'Mieko and the Fifth Treasure',
+        description: 'When the bomb was dropped on Nagasaki, Miekos nearby village was turned into ruins, and her hand was badly injured.',
+        year: 2003,
+        autor: 'Eleanor Coerr',
+        cost: 205.00,
+        amount: 3,
+        deleted: 0,
+      },
+      {
+        name: 'The Outsiders',
+        description: 'The Outsiders Paperback – 1994',
+        year: 1994,
+        autor: 'S.E. Hinton',
+        cost: 145.00,
+        amount: 8,
+        deleted: 0,
+      },
+      {
+        name: 'The House On Mango Street',
+        description: 'Book about a young girl growing up in the Latino section of Chicago. ',
+        year: 1994,
+        autor: 'Hardcover',
+        cost: 248.50,
+        amount: 4,
+        deleted: 0,
+      },
+      {
+        name: 'The Old Man and the Sea',
+        description: 'The Old Man and the Sea, an apparently simple fable, represents the mature Hemingway at his best.',
+        year: 1952,
+        autor: 'Ernest Hemingway',
+        cost: 410.80,
+        amount: 5,
+        deleted: 0,
+      },
+    ], {});
+  },
+
+  down: (queryInterface, Sequelize) => {
+    return queryInterface.bulkDelete('books', null, {})
+  }
+};

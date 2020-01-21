@@ -1,0 +1,449 @@
+.toolbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.toolbar-container__main-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.projects-amount {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 85px;
+    padding: 25px 0;
+}
+
+.details-toolbar {
+    height: 60px;
+    padding: 15px 0;
+}
+
+.left-toolbar-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-cont {
+    position: relative;
+}
+
+.search-field+svg {
+    position: absolute;
+    top: 14%;
+    right: 1%;
+    transition: 0.3s;
+}
+
+.search-field+.list-tool-bar__input-svg--position {
+    position: absolute;
+    top: 14%;
+    right: 1%;
+    transition: 0.3s;
+}
+
+.clear-search {
+    cursor: pointer;
+}
+
+.search-cont svg path {
+    transition: 0.3s;
+}
+
+.search-field {
+    width: 450px;
+    outline: none;
+    border: 1px solid #DFDFDF;
+    padding: 8px 40px 8px 15px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.search-field:focus {
+    border: 1px solid rgb(57, 85, 242);
+}
+
+.search-field:focus+svg path {
+    fill: rgb(57, 85, 242);
+}
+
+.search-field::-webkit-input-placeholder {
+    color: #b0b0b0;
+}
+
+.search-field::-moz-placeholder {
+    color: #b0b0b0;
+}
+
+.search-field:-ms-input-placeholder {
+    color: #b0b0b0;
+}
+
+.search-field:-moz-placeholder {
+    color: #b0b0b0;
+}
+
+.filter-options {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 0 0 30px;
+}
+
+.filters:hover path {
+    fill: #D95E33;
+}
+
+.configuration {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0 0 0 20px;
+}
+
+.configuration path {
+    transition: 0.2s;
+}
+
+.configuration:hover path, .i-active path {
+    fill: #D95E33;
+}
+
+.configuration-options-cont {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    min-height: auto;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
+    font-size: 14px;
+    z-index: 999;
+    top: 120%;
+    left: 0%;
+}
+
+.configuration-option {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 35px !important;
+    padding: 0 15px;
+    cursor: pointer;
+    user-select: none;
+    margin: 0;
+    transition: 0.3s;
+}
+.configuration-option>span {
+    box-sizing: unset;
+}
+
+.configuration-option:hover {
+    background: #fff3e5;
+}
+
+.configuration-option__label {
+    position: absolute;
+    left: 46px;
+    cursor: pointer;
+}
+
+.right-toolbar-part {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.toolbar-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 20px;
+    height: 100%;
+    cursor: pointer;
+    user-select: none;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.toolbar-button svg {
+    margin: 0 10px 0 0;
+    transition: 0.3s;
+}
+
+.toolbar-button:hover {
+    border-color: rgb(57, 85, 242);
+}
+
+.toolbar-button-disabled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 20px;
+    height: 100%;
+    cursor: pointer;
+    user-select: none;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.toolbar-button-disabled svg {
+    margin: 0 10px 0 0;
+    transition: 0.3s;
+}
+
+.filters-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 100%;
+    background: #F8F8F8;
+    transition: 0.3s;
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
+    margin-top: 5px;
+}
+
+.filters-menu::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 10px solid #F8F8F8;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    left: 482px;
+    top: -10px;
+}
+
+.hide-config {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.hide-filters {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.filter-options {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.filter-buttons div {
+    display: flex;
+    justify-content: center;
+}
+.save-btn {
+    margin-left: 20px !important;
+}
+.filter-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    margin: 20px 20px 20px 0;
+    transition: 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.apply {
+    color: white;
+    background: rgb(57, 85, 242);
+}
+
+.apply:hover {
+    background: #D95E33;
+}
+
+.reset:hover {
+    background: #DFDFDF;
+}
+
+.choosed-filters {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+}
+
+.toolbar-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 16px 20px;
+    height: 100%;
+    cursor: pointer;
+    user-select: none;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+.popover {
+    width: 223px;
+    height: 67px;
+    display: absolute;
+    margin: 100px 0 0 -90px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.14);
+    background: #FFEEDF;
+    border: 1px solid #A5A5A5;
+    z-index: 2;
+    cursor: pointer;
+}
+.popover p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: normal;
+    color: #727272;
+    margin: 13px 0 0 16px;
+}
+.runner-container {
+    margin-left: 40px;
+}
+.toolbar-date_range {
+    width: 600px;
+    display: block;
+}
+.toolbar-date_range-container {
+    display: inline-block;
+    margin-left: 10px;
+}
+.history_date {
+    min-height: 42px;
+}
+.history_date>div {
+    width: 250px;
+    height: 35px;
+}
+.history_date p {
+    position: absolute;
+    margin-top: 40px;
+}
+
+.history .clear-svg {
+   top: 18px;
+   right: 20px;
+}
+
+.list-toolbar__view-tabs {
+    margin-top: 5px;
+    padding-left: 20px;
+    height: 30px !important;
+}
+ 
+.list-toolbar__view-tabs div div {
+    height: 25px;
+    overflow: hidden
+}
+
+.list-toolbar__view-tabs div div div span {
+    width: 100px;
+    min-width: 100px;
+}
+
+.list-toolbar__view-tabs div div div button {
+    padding: 0 !important;
+    min-height: 10px;
+    width: 100px;
+    min-width: 100px;
+}
+  
+.list-toolbar__view-tabs div div .MuiTabs-indicator {
+      background-color: rgb(57, 85, 242) !important;
+}
+
+.step__form {
+    margin: 0;
+    min-height: 50px;
+    justify-content: flex-end;
+  }
+  
+  .step__input>label>span, 
+  .step__form>label>span, 
+  .step__date-picker>label>span,
+  .step__multiselect .multi-select_is-required {
+    color: orangered !important;
+  }
+  
+  .c-SOW-edit__description>label>span,
+  .step__form>label>span,
+  .step__date-picker>label>span,
+  .step__multiselect .multi-select_is-required {
+    color: orangered !important;
+  }
+  
+  .step__description>label>span,
+  .step__form>label>span,
+  .step__date-picker>label>span,
+  .step__multiselect .multi-select_is-required {
+    color: orangered !important;
+  }
+  
+  .step__form>div>div:before, .step__form>div>div:after {
+    content: none;
+  }
+  
+  .step__form input {
+    width: 100%;
+    height: 100%;
+    padding: 0 40px 0 10px;
+  }
+  
+  .step__form .date-svg {
+    position: absolute;
+    cursor: pointer;
+    top: 45%;
+    right: 16%;
+  }
+  
+  .step__form>div>div {
+    background: #F2F2F2;
+    border: 1px solid #DFDFDF;
+    font-size: 14px;
+  }

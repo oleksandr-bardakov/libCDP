@@ -1,0 +1,28 @@
+.MuiFormLabel-asterisk-22 {
+    color: orangered !important;
+    font-size: 16px;
+}
+.change-border__input div {
+    margin-top: -6px !important;
+    font-size: 14px;
+}
+.change_employee_cross div {
+    padding: 0 20px 0 0;
+}
+.change-border__input__project {
+    margin-top: -5px !important;
+    padding: 0 20px 0 0 !important;
+}
+.change-border__input__project div::after {
+    border: 1px solid black;
+}
+.change-border__input div::after {
+    border: 1px solid black;
+}
+
+.change-border__input-cell div {
+    font-size: 14px;
+}
+.change-border__input-cell div::after {
+    border-bottom: 1px solid black;
+}

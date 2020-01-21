@@ -1,0 +1,41 @@
+.dialog-width div div{
+    width:500px;
+    overflow-y: visible;
+}
+
+.show-dialog-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;    
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.show-dialog-content{
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #000000;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.margin-top_dialog {
+    margin-top: 10px;
+}
+
+.dialog-cancel-svg{
+    position: absolute;
+    cursor: pointer;
+    right:20px;
+}
+
+.confirmationdialog-button-size{
+    margin-bottom: 10px !important;
+    margin-right: 20px !important;
+    width:100px !important;
+}
+.confirmation-dialog-question {
+    display: inline !important;
+}

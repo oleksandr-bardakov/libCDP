@@ -1,0 +1,117 @@
+.book-details__modal-width {
+    height: auto;
+}
+
+.book-details__modal-width div div{
+    overflow-y: visible;
+    max-width: 900px;
+}
+
+.show-dialog-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;    
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.dialog-cancel-svg{
+    position: absolute;
+    cursor: pointer;
+    right:20px;
+}
+
+.redux-form-book-details-width {
+    width: 900px;
+}
+
+.book-details__modal--dialog-action  {
+    margin: 10px 0 10px 0;
+}
+
+.confirmationdialog-button-size{
+    margin-bottom: 10px !important;
+    margin-right: 20px !important;
+    width:100px !important;
+}
+
+.book-details-block {
+    display: flex;
+    min-height: 400px;
+}
+.book-details-info {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 5px;
+    align-items: center;
+}
+.book-details-form {
+    width: 550px;
+    padding: 5px;
+}
+
+.field-book__content-block {
+    max-width: 250px !important;
+}
+
+.redux-form__book-row--field-book {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.redux-form__book-row--field-book-width {
+    min-height: 80px;
+    width: 815px;
+}
+
+.text__field {
+    min-height: 42px;
+}
+
+.text__field>div {
+    width: 250px;
+    height: 35px;
+    max-width: 250px !important;
+}
+
+.genre-container {
+    max-width: 470px;
+    margin-left: 10px;
+}
+
+.step__form--book-big-block>div>div {
+    background: #F2F2F2;
+    border: 1px solid #DFDFDF;
+    font-size: 14px;
+    max-height: 100px;
+    max-width: 470px;
+}
+
+.step__form--book-big-block>div>div textarea {
+    padding-left: 5px;
+    max-height: 100px;
+}
+
+.step__form--book-big-block div .MuiInput-underline:before {
+    border: none !important;
+}
+
+.step__form--book-big-block div .MuiInput-underline:after {
+    border: none !important;
+}
+
+.modal__book-details--textarea-book div textarea {
+    min-height: 34px !important;
+    max-height: 100px;
+    max-width: 470px;
+    overflow: auto !important;
+}
+
+.modal__book-details--big-block-ganres div span {
+    max-width: 470px;
+}
